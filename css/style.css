@@ -1,0 +1,26 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    height: calc(100vh - 100px);
+    background-color: #141922;
+    display: flex;
+}
+
+#sidebar
+{
+    width: 100px;
+    background-color: #000;
+}
+
+
+footer
+{
+    height: 100px;
+    background-color: #f00;
+}
