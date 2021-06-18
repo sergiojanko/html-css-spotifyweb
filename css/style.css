@@ -37,9 +37,20 @@ body
 /* SIDE BAR */
 #side-bar
 {
-    width: 50px;
+    width: 100px;
     background-color: #000;
 }
+
+#logo .logo-big
+{
+    display: none;
+    width: 200px;
+}
+#logo .logo-small img
+{
+    width: 50px;
+}
+
 
 /* MAIN CONTENT */
 #main-content
@@ -128,3 +139,23 @@ footer
     position: fixed;
 }
 
+
+
+
+@media screen and (min-width: 980px)
+{
+    #logo .logo-big
+    {
+        display: block;
+    }
+    #logo .logo-small
+    {
+        display: none;
+    }
+
+    #side-bar
+    {
+        width: 230px;
+        background-color: #000;
+    }
+}
