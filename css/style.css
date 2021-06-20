@@ -29,6 +29,7 @@ body
     height: calc(100vh - 100px);
     background-color: #141922;
     display: flex;
+
 }
 
 
@@ -41,6 +42,11 @@ body
     background-color: #000;
 }
 
+/* LOGO */
+#logo
+{
+    padding: 15px;
+}
 #logo .logo-big
 {
     display: none;
@@ -48,7 +54,47 @@ body
 }
 #logo .logo-small img
 {
-    width: 50px;
+    width: 30px;
+}
+
+/* SIDE-NAV */
+.navigation
+{
+    padding: 5px;
+}
+.navigation li
+{
+    list-style-type: none;
+}
+
+.navigation .top-nav
+{
+    padding: 10px;
+}
+.navigation .top-nav .nav-text
+{
+    display: none;
+    height: 100%;
+    font-size: 0.8em;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.navigation .top-nav img
+{
+    width: 30px;
+    vertical-align: middle;
+}
+
+.navigation .playlist-nav
+{
+    padding: 10px;
+    display: none;
+}
+
+.navigation .playlist-nav li
+{
+    padding: 10px 0;
 }
 
 
@@ -64,6 +110,9 @@ body
     height: 70px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 /* TOPBAR */
@@ -85,6 +134,11 @@ body
 
 /* CONTENT */
 
+#main-content
+{
+    padding-top: 70px;
+}
+
 #main-content nav ul
 {
     display: flex;
@@ -98,7 +152,11 @@ body
     padding: 10px;
     color: #777;
 }
-
+#main-content section h2,
+#main-content section .section-text
+{
+    padding: 15px;
+}
 #main-content .album-container 
 {
 display: flex;
@@ -110,6 +168,7 @@ padding: 10px;
 #main-content .album-container .album-img
 {
     max-width: 200px;
+    padding: 10px;
 }
 #main-content .artist-container 
 {
@@ -142,7 +201,7 @@ footer
 
 
 
-@media screen and (min-width: 980px)
+@media screen and (min-width: 890px)
 {
     #logo .logo-big
     {
@@ -158,4 +217,16 @@ footer
         width: 230px;
         background-color: #000;
     }
+
+    .navigation .top-nav .nav-text
+    {
+        display: inline-block;
+    }
+
+    .navigation .playlist-nav
+    {
+        padding: 10px;
+        display: block;
+    }
+
 }
