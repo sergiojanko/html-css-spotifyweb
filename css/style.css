@@ -347,6 +347,9 @@ footer .volume-cmd .fas
 {
     padding: 5px;
 }
+footer .volume-cmd{
+    position: relative;
+}
 footer .volume-bar
 {
     height: 2px;
@@ -363,11 +366,12 @@ footer .volume-bar::before
     position: absolute;
 }
 
-footer .volume-bar:hover:before::after
+footer .volume-bar::after
 {
     content: '';
     border-radius: 50%;
-    height: 3px;
+    height: 300px;
+    width: 300px;
     background-color: #fff;
 }
 
